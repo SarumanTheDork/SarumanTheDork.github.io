@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Timer</title>
+  </head>
+  <body>
+    <h1>Timer</h1>
+    <div id="timer">60</div>
+    <button id="start-timer">Start Timer</button>
+<button id="pause-timer">Pause Timer</button>
+<button id="restart-timer">Restart Timer</button>
+   
+    <script>
+      var count = 60;
+      var timer = document.getElementById("timer");
+      var intervalId;
+      
+      function startTimer() {
+        clearInterval(intervalId);
+        count = 60;
+        timer.innerHTML = count;
+        intervalId = setInterval(function() {
+          count--;
+          timer.innerHTML = count;
+          if (count === 0) {
+            clearInterval(intervalId);
+            timer.innerHTML = "Time's up!";
+          }
+        }, 1000);
+      }
+      startTimer();
+    </script>
+  </body>
+</html>
