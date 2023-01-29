@@ -1,40 +1,16 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">    
-<script src="script.js" type="text/javascript"></script>
-    <title>Timer</title>
+    <title>Musings on My Work</title>
   </head>
-  
- 
-  
   <body>
-<script src="script.js" type="text/javascript"></script>
-    <h1>Timer</h1>
-    <div id="timer">60</div>
-    <button id="start-timer">Start Timer</button>
-<button id="pause-timer">Pause Timer</button>
-<button id="restart-timer">Restart Timer</button>
-   
-    <script>
-      var count = 60;
-      var timer = document.getElementById("timer");
-      var intervalId;
-      
-      function startTimer() {
-        clearInterval(intervalId);
-        count = 60;
-        timer.innerHTML = count;
-        intervalId = setInterval(function() {
-          count--;
-          timer.innerHTML = count;
-          if (count === 0) {
-            clearInterval(intervalId);
-            timer.innerHTML = "Time's up!";
-          }
-        }, 1000);
-      }
-      startTimer();
-    </script>
+    <h2>Gathering Topic Ideas</h2>
+<ul>
+  <li>Answer The Public</li>
+  <li>QS Google</li>
+  <li>Whim</li>
+  <li>Internal Search</li>
+  <li>Third-Party Aggregators</li>
+</ul>
+
   </body>
 </html>
