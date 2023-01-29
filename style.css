@@ -1,6 +1,6 @@
 body {
   background-color: #000000;
-  color: #000;
+  color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-size: 14px;
   display: flex;
@@ -12,26 +12,29 @@ body {
   background-color: #FFFFCC;
   border: 1px solid #FFCC00;
   border-radius: 10px;
+  flex-basis: calc(33.33% - 20px);
   margin-bottom: 20px;
   padding: 20px;
-  
-
+  text-align: center;
 }
 
 h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #808080;
+  text-align: center;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  text-align: center;
 }
 
 li {
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
 }
 
 li:before {
