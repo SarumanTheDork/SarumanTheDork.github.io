@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
 }
 
-..note {
+.note {
   background-color: #333;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3), -2px -2px 20px rgba(255, 255, 255, 0.3);
