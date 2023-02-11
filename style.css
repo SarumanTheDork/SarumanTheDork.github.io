@@ -17,9 +17,9 @@ body {
   font-size: 18px;
   padding: 20px;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-}
+   flex-basis: calc(33.33% - 20px);
+margin-bottom: 20px;
+  padding: 20px;}
 
 .note::after {
   content: "";
@@ -42,12 +42,6 @@ body {
 
 
 
-.note{
-      flex-basis: calc(33.33% - 20px);
-    margin: 20px;
-
-
-}
 
 h2 {
   background-color: #FFCC00;
