@@ -17,9 +17,7 @@ body {
   font-size: 18px;
   padding: 20px;
   text-align: center;
-   flex-basis: calc(33.33% - 10px);
-margin-bottom: 20px;
-   position: relative;
+  position: relative;
   overflow: hidden;
 }
 
@@ -41,13 +39,6 @@ margin-bottom: 20px;
 .note:hover::after {
   transform: scale(1);
 }
-
-.note h3 {
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(255, 255, 255, 0.3);
-}
-
 
 h2 {
   background-color: #FFCC00;
