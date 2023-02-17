@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #002147;
   color: #000;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -9,35 +9,14 @@ body {
 }
 
 .note {
-  background-color: #333;
+  background-color: #FFFFCC;
+  border: 1px solid #FFCC00;
   border-radius: 10px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3), -2px -2px 20px rgba(255, 255, 255, 0.3);
-  color: #fff;
-  display: inline-block;
-  font-size: 18px;
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
   padding: 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
+    box-shadow: 0px 0px 01px 2px #FFFFFF;
 
-.note::after {
-  content: "";
-  background-color: #333;
-  border-radius: 10px;
-  box-shadow: inset 2px 2px 15px rgba(255, 255, 255, 0.3), inset -2px -2px 20px rgba(0, 0, 0, 0.3);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
-.note:hover::after {
-  transform: scale(1);
 }
 
 h2 {
